@@ -1,0 +1,143 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+:root{
+    --bg-color:#081b29;
+    --second-bg-color:#ffffff;
+    --text-color:#ededed;
+    --second-text-color:#00abf0;
+}
+
+body {
+   background: var(--bg-color);
+}
+
+header {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 20%;
+}
+
+.flex-top {
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 50%;
+    margin: 10px;
+}
+
+.flex-bottom {
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 50%;
+    margin: 10px;
+}
+
+span{
+    color: var(--second-text-color);
+}
+
+.header{
+    font-size: 60px;
+    font-weight: 900;  
+}
+
+.sub-header {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.explanation {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.submit {
+    background-color: #04AA6D;
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.reset {
+    background-color: red;
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.output-luas,
+.output-keliling {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    border: 2px solid #2c3e50;
+    min-height: 30px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.rumus {
+    background-color: var(--second-text-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 220px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+
+.input:focus {
+    border: 2px solid grey;
+}
+
+#hasil, #sisi-luas, #output_luas,
+#sisi-keliling, #output_keliling{
+    color: var(--text-color);
+}
+
+.footer{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color:var(--text-color);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="components/css/style.css">
+    <script src="components/js/script.js"></script>
+</head>
+<body>
+    <header>
+        WELCOME TO <span class="header">KATIK</span> 
+        <span class="sub-header">(Kalkulator Matematik)</span>
+        <p class="explanation">Sebuat web apps sederhana yang berfungsi untuk menghitung nilai Luas dan Keliling Bangun Datar</p>
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="flex-top">
+                <div>
+                    <h1> <span>LUAS</span> PERSEGI</h1>
+                </div>
+                <div>
+                    <img src="components/image/persegi.jpg" alt="gambar luas bujur sangkar" width="150">
+                    <p>Rumus Luas Persegi yaitu: <br>
+                        <div><span class="rumus"><strong> L = S x S</strong></span></div>
+                        <br> Keterangan :<br> L = Luas<br> S = Sisi</p>
+                </div>
+                <div>
+                    <h2>Hitung Luas Persegi</h2>
+                    <input class="input" type="number" placeholder="Masukkan Sisi Luas" name="sisi-luas" required>
+                    <button id="hitung-luas" class="submit" onclick="hitungLuas()">Hitung Luas</button>
+                    <button class="reset" onclick="resetLuas()">Reset</button>
+                    <div class="output-luas" id="output-luas" hidden>
+                        <span id="hasil">Hasil Perhitungan:</span><br> L = S x S <br> L = <span id="sisi-luas"></span><br> L = <span id="output_luas"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-bottom">
+                <div>
+                    <h1> <span>KELILING</span> PERSEGI</h1>
+                </div>
+                <div>
+                    <img src="components/image/persegi.jpg" alt="gambar luas bujur sangkar" width="150">
+                    <p>Rumus Keliling Persegi yaitu:</p>
+                    <div>
+                        <span class="rumus"><strong> K = 4 x S</strong></span>
+                    </div>
+                    <br> Keterangan :<br> K = Keliling<br> S = Sisi</p>
+                </div>
+
+                <div>
+                    <h2>Hitung Keliling Persegi</h2>
+                    <input class="input" type="number" placeholder="Masukkan Sisi Keliling" name="sisi-keliling" required>
+                    <button name="hitung-keliling" class="submit" onclick="hitungKeliling()">Hitung Keliling</button>
+                    <button class="reset" onclick="resetKeliling()">Reset</button>
+                    <div class="output-keliling" id="output-keliling" hidden>
+                        <span id="hasil">Hasil Perhitungan:</span><br> K = 4 x S <br> L = <span id="sisi-keliling"></span><br> L = <span id="output_keliling"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- footer design -->
+         <Footer class="footer">
+            <div class="footer-icontop">
+                <a href="#"><i class='bx bxs-up-arrow-alt'></i></a>
+            </div>
+            <div class="footertext">
+                <hr>
+                <p>Copyright &copy; 2023 M. Randy Anugerah
+                    <br> All Right Reserved.
+                </p>
+                <span id="timeSpan"></span>
+            </div>
+        </Footer>
+    </main>
+</body>
+</html>
